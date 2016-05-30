@@ -1,0 +1,27 @@
+{
+  "name": "serverlist",
+  "version": "1.0.0",
+  "description": "A live server list for battlefield 2 servers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --port=8000",
+    "start-https": "webpack-dev-server --port=8443 --https",
+    "build": "webpack -p"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0",
+    "whatwg-fetch": "^1.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^1.8.10",
+    "typings": "^1.0.4",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1",
+    "ts-loader": "^0.8.2",
+    "source-map-loader": "^0.1.5"
+  }
+}
