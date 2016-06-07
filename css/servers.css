@@ -1,0 +1,130 @@
+
+/* Colors */
+
+body {
+	background-color: #181818;
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.server a,
+.server a:hover,
+.server a:focus,
+.server a:visited {
+	color: #1db954;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+.server {
+	background-color: #282828;
+}
+
+.server header {
+	padding: 15px 0;
+	background-color: #181818;
+	line-height: 15px;
+	vertical-align: middle;
+}
+
+.server header .status {
+	display: inline-block;
+	border-radius: 50%;
+	width: 15px;
+	height: 15px;
+}
+.server header .status.online {
+	background-color: #1db954;
+}
+.server header .status.offline {
+	background-color: darkred;
+}
+
+.server header h1 {
+	display: inline-block;
+	font-size: 2rem;
+	margin: 0 0 0 10px;
+	padding: 0;
+}
+
+.server header .map {
+	color: #a0a0a0;
+	margin-right: 10px;
+	line-height: 2rem;
+}
+
+.server header .players {
+	float: right;
+	font-size: 2rem;
+	line-height: 2rem;
+}
+
+.server ul.info {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	color: #a0a0a0;
+}
+
+.server ul.info li {
+	display: inline-block;
+	margin: 5px 0 5px 15px;
+}
+
+.server table tr th,
+.server table tr td {
+	font-weight: normal;
+	padding: 4px;
+}
+
+.server table thead th {
+	border-bottom: 1px solid #181818;
+	color: #a0a0a0;
+}
+
+.server th.team-score .icon,
+.server th.kills .icon, 
+.server th.deaths .icon, 
+.server th.total-score .icon, 
+.server th.ping .icon {
+	background: url('../img/score-icons.png') no-repeat;
+	text-align: center;
+	vertical-align: middle;
+	display: inline-block;
+}
+.server th.team-score .icon { background-position: -0px -32px; width: 16px; height: 16px; }
+.server th.kills .icon { background-position: -16px -0px; width: 16px; height: 16px; }
+.server th.deaths .icon { background-position: -0px -0px; width: 16px; height: 16px; }
+.server th.total-score .icon { background-position: -16px -16px; width: 16px; height: 16px; }
+.server th.ping .icon { background-position: -0px -16px; width: 16px; height: 16px; }
+
+.server th {
+	min-width: 50px;
+}
+.server th.ch {
+	background: url('../img/ch.gif') no-repeat center center;
+}
+
+.server th.us {
+	background: url('../img/us.gif') no-repeat center center;
+}
+
+.server th.mec {
+	background: url('../img/mec.gif') no-repeat center center;
+}
+
+.server th.eu {
+	background: url('../img/eu.gif') no-repeat center center;
+}
+
+.server th.name {
+	width: 100%;
+}
+
+.server tbody tr td {
+	border-color: transparent;
+}
+
+.server tbody tr td:last-of-type {
+	color: #a0a0a0;
+}

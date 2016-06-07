@@ -8,6 +8,7 @@ var servers: ServerUri[] = [
     { name: "netsky-se", hostIp: "31.220.7.51", queryPort: 29900 },
     { name: "trademark", hostIp: "81.19.219.187", queryPort: 29900 },
     { name: "xxxpert", hostIp: "176.57.184.120", queryPort: 29900 },
+    { name: "ngro", hostIp: "190.112.0.112", queryPort: 29900 }
 ];
 
 ReactDOM.render(

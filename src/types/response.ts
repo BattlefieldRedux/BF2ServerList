@@ -48,4 +48,6 @@ export interface Player {
     totalScore: number;
     ping: number;
     isBot: boolean;
+    rank: number;
+    countryCode: string;
 }

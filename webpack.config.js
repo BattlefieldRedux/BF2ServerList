@@ -1,5 +1,6 @@
+var webpack = require('webpack');
 module.exports = {
-    entry: ["whatwg-fetch", "./src/index.tsx"],
+    entry: ["es6-promise", "whatwg-fetch", "./src/index.tsx"],
     output: {
         filename: "./bundle.js",
     },
@@ -31,5 +32,18 @@ module.exports = {
     externals: {
         "react": "React",
         "react-dom": "ReactDOM"
-    }
+    },
+    
+    plugins:[
+        new webpack.DefinePlugin({
+            'process.env':{
+                'NODE_ENV': JSON.stringify('production')
+            }
+        }),
+        new webpack.optimize.UglifyJsPlugin({
+            compress:{
+                warnings: true
+            }
+        })
+    ]
 };

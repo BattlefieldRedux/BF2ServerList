@@ -13,13 +13,18 @@ export default class PlayerRow extends React.Component<PlayerRowProps, any> {
     }
 
     render() {
-        return <tr>
-            <th>{this.props.player.name}</th>
-            <th>{this.props.player.teamScore}</th>
-            <th>{this.props.player.kills}</th>
-            <th>{this.props.player.deaths}</th>
-            <th>{this.props.player.totalScore}</th>
-            <th>{this.props.player.ping}</th>
+        var connecting = this.props.player.ping == 0 && !this.props.player.isBot ? "connecting" : "";
+        var botText = this.props.player.isBot ? "BOT " : "";
+        // var country = this.props.player.countryCode != null ? <span className={"flag flag-" + this.props.player.countryCode.toLowerCase()}></span> : "";
+        var rank = <span className={"rank rank-" + this.props.player.rank}></span>
+        return <tr className={connecting}>
+            <td>{rank}</td>
+            <td><a href="#">{botText}{this.props.player.name}</a></td>
+            <td>{this.props.player.teamScore}</td>
+            <td>{this.props.player.kills}</td>
+            <td>{this.props.player.deaths}</td>
+            <td>{this.props.player.totalScore}</td>
+            <td>{this.props.player.ping}</td>
         </tr>;
     }
 }

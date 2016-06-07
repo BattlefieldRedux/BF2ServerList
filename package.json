@@ -7,14 +7,15 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --port=8000",
     "start-https": "webpack-dev-server --port=8443 --https",
-    "build": "webpack -p"
+    "build": "webpack -p --optimize-minimize"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "react": "^15.1.0",
     "react-dom": "^15.1.0",
-    "whatwg-fetch": "^1.0.0"
+    "whatwg-fetch": "^1.0.0",
+    "es6-promise": "^3.2.1"
   },
   "devDependencies": {
     "typescript": "^1.8.10",
